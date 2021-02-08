@@ -1,0 +1,14 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+ip = int(input())
+for i in range(ip):
+    string = input()
+    even = []
+    odd = []
+    for i in range(len(string)):
+        if i == 0 or i %2 == 0:
+            even.append(string[i])
+        elif i == 1 or i %2 != 0:
+            odd.append(string[i])
+    a = "".join(even)
+    b = "".join(odd)
+    print(a,b)

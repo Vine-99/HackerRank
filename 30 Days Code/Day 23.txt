@@ -1,0 +1,17 @@
+
+
+    def levelOrder(self,root):
+        #Write your code here
+        
+        arr = []
+        arr_transversal = ""
+        arr.append(root)
+        while len(arr)>0:
+            node = arr.pop(0)
+            if node.left:
+                arr.append(node.left)
+            if node.right:
+                arr.append(node.right)
+            arr_transversal += str(node.data)+ " " 
+        print(arr_transversal)
+

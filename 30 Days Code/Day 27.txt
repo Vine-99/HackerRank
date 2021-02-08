@@ -1,0 +1,39 @@
+
+class TestDataEmptyArray(object):
+    
+    @staticmethod
+    def get_array():
+        # complete this function
+        return []
+class TestDataUniqueValues(object):
+    arr = []
+    for i in range(5):
+        arr.append(i)
+    arr[::-1]
+    @staticmethod
+    def get_array():
+        # complete this function
+        return TestDataUniqueValues.arr
+    @staticmethod
+    def get_expected_result():
+        # complete this function
+        arr = TestDataUniqueValues.get_array()
+        return arr.index(min(arr))
+class TestDataExactlyTwoDifferentMinimums(object):
+    arr = []
+    for i in range(5):
+        arr.append(i)
+    arr[::-1]
+    arr.insert(0,0)
+
+    @staticmethod
+    def get_array():
+        # complete this function
+        return TestDataExactlyTwoDifferentMinimums.arr
+
+    @staticmethod
+    def get_expected_result():
+        # complete this function
+        arr = TestDataExactlyTwoDifferentMinimums.get_array()
+        return arr.index(min(arr))
+

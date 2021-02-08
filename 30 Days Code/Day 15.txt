@@ -1,0 +1,15 @@
+
+
+    def insert(self,head,data):
+        if head == None:
+            head = Node(data)
+        else:
+            itr = head
+            while itr.next:
+                itr = itr.next
+            itr.next = Node(data)
+        return head 
+    #Complete this method
+    
+    
+

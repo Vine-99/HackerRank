@@ -1,0 +1,16 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+return_date = list(map(int,input().split()))
+due_date = list(map(int,input().split()))
+if return_date[-1] > due_date[-1]:
+    print(10000)
+elif return_date[-1]<due_date[-1]:
+    print(0)
+else:
+    if return_date[1] > due_date[1]:
+        diff = return_date[1] - due_date[1]
+        print(500 * diff)
+    elif return_date[1] < due_date[1]:
+        print(0)
+    else:
+        diff = return_date[0] - due_date[0]
+        print(15*diff)
